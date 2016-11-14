@@ -31,7 +31,7 @@ body {
   width: 120px;
   height: 110px;
   position: absolute;
-  top: -55px;
+  top: 5px;
   left: 62px;
 
 }
@@ -282,6 +282,33 @@ body {
   -o-animation: eat 3s;
   animation: eat 3s;
 }
+
+.oval-speech-border {
+  float: right;
+  position: relative;
+  padding: 45px 30px;
+  margin: 1em auto 60px;
+  border: 5px solid #fff;
+  text-align: center;
+  color: #fff;
+  background: #2e2a23;
+  -webkit-border-top-left-radius: 240px 140px;
+  -webkit-border-top-right-radius: 240px 140px;
+  -webkit-border-bottom-right-radius: 240px 140px;
+  -webkit-border-bottom-left-radius: 240px 140px;
+  -moz-border-radius: 240px / 140px;
+  border-radius: 240px / 140px;
+  width: 382px;
+}
+
+.oval-speech-border p {
+  word-wrap: break-word;
+  font-family: "Varela Round", sans-serif;
+  line-height: 25px;
+  font-size: 2em;
+  margin: 0;
+}
+
 
 @-webkit-keyframes eat {
   0%{ 

@@ -71,8 +71,13 @@ $(document).ready(function(){
 	});
 
 	$(document).on('keypress', function(e){
+		console.log(e.which);
 		if (e.which === 26) {
 			resetCookies();
 		}
+	});
+
+	$('.how-it-works').hover(function(){
+		$('#directions').toggleClass('hidden');
 	});
 });
