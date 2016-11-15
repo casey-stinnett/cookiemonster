@@ -277,12 +277,6 @@ body {
   padding-left: 9px;
 }
 
-.get-eaten {
-  -webkit-animation: eat 3s;
-  -o-animation: eat 3s;
-  animation: eat 3s;
-}
-
 .oval-speech-border {
   float: right;
   position: relative;
@@ -309,90 +303,3 @@ body {
   margin: 0;
 }
 
-
-@-webkit-keyframes eat {
-  0%{ 
-    left: 62px; 
-    top: 0;
-  }
-  5%{
-    left: 62px; 
-    top: -4px;
-  }
-  10%{
-    left: 62px; 
-    top: -8px;
-  }
-  15%{
-    left: 62px;
-    top: -14px;
-  }
-  20%{
-    left: 62px;
-    top: -20px;
-  }
-  25%{
-    left: 62px;
-    top: -28px;
-  }
-  30%{
-    left: 62px;
-    top: -34px;
-  }
-  35%{
-    left: 62px;
-    top: -39px;
-  }
-  40%{
-    left: 62px;
-    top: -45px;
-  }
-  45%{
-    left: 62px;
-    top: -50px;
-  }
-  50%{
-    left: 62px;
-    top: -55px;
-  }
-  55%{
-    left: 62px;
-    top: -59px;
-  }
-  60%{
-    left: 62px;
-    top: -63px;
-  }
-  65%{
-    left: 62px;
-    top: -68px;
-  }
-  70%{
-    left: 62px;
-    top: -72px;
-  }
-  75%{
-    left: 62px;
-    top: -76px;
-  }
-  80%{
-    left: 62px;
-    top: -82px;
-  }
-  85%{
-    left: 62px;
-    top: -86px;
-  }
-  90%{
-    left: 62px;
-    top: -90px;
-  }
-  95%{
-    left: 62px;
-    top: -95px;
-  }
-  100%{
-    left: 62px;
-    top: -100px;
-  }
-}

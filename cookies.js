@@ -41,6 +41,7 @@ $(document).ready(function(){
 		snapMode: "inner",
 		revert: 'invalid',
 		start: function(){
+			//Gather original CSS so we can reset it once it's eaten
 			$originalPlate = $(this).parent();
 			originalTop = $(this).css('top');
 			originalLeft = $(this).css('left');
@@ -52,14 +53,18 @@ $(document).ready(function(){
 			};
 		},
 		stop: function(){
-			if (droppedInRightPlace) {
-				var $this = $(this);
-				$(this).appendTo('.cookie-monster.bottom').addClass('get-eaten');
-				setTimeout(function(){
-					$this.removeClass('get-eaten').appendTo($originalPlate).css(originalCss);
-					droppedInRightPlace = false;
-				}, 3000);
-				increaseCount($this);
+			if (droppedInRightPlace) {//Checks if dropped in right place
+				$(this).appendTo('.cookie-monster.bottom').css({
+					top: '0px',//Have to reset the top since dragging changed it
+					left: '62px'
+				}).animate({
+					top: '-120px'//Where it moves to
+				}, 3000, function(){
+					//Reset the CSS
+					$(this).appendTo($originalPlate).css(originalCss);
+					droppedInRightPlace = false;//Reset to false
+				});
+				increaseCount($(this));
 			}//end if
 		}//end stop function
 	});
